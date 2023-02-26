@@ -28,7 +28,7 @@ from bson.json_util import dumps
 # Download stopwords
 nltk.download('stopwords')
 
-df = pd.read_csv('/app/data/tweet.csv')
+df = pd.read_csv('tweet.csv')
 
 # 1: convert the type column to int values
 df.loc[df["Type"] == "medical-emergency", "Type"] = 1
